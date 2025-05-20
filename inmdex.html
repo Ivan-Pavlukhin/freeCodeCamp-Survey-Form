@@ -1,0 +1,64 @@
+<DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=New+Rocker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/index.css">
+  </head>
+
+  <body class="new-rocker-regular">
+    <div class="container">
+      <h1 id="title">Page title</h1>
+      <p id="description">description</p>
+      <form id="survey-form">
+        <div class="form-section">
+          <label id="name-label" for="name">Name</label>
+          <input class="input" id="name" type="text" required placeholder="Ivan Pavlukhin">
+          <label id="email-label" for="email">Email</label>
+          <input class="input" id="email" type="email" required placeholder="user@email.com">
+          <label id="number-label" for="number">Number</label>
+          <input class="input" id="number" type="number" min="7" max="11" placeholder="470-123-4567">
+        </div>
+        <span class="text">How much time are you willing to spend on studying??</span>
+        <select class="form-section" id="dropdown">
+          <option value="full-time">Full time</option>
+          <option value="part-time">Part time</option>
+        </select>
+        <div class="form-section">
+          <label class="block">
+            <span class="text">Are you ready take classes?</span>
+            <input type="radio" name="group" value="no"> No
+          </label>
+          <label class="block">
+            <input type="radio" name="group" value="yes"> Yes
+          </label>
+          <label class="block">
+            <input type="radio" name="group" value="maybe"> Maybe
+          </label>
+          <label class="block">
+            <input type="radio" name="group" value="defenetly"> Defenetly
+          </label>
+        </div>
+        <div class="form-section">
+          <span class="text">What do you currently know?</span>
+          <label class="block">
+            <input type="checkbox" value="html"> HTML
+          </label>
+          <label class="block">
+            <input type="checkbox" value="css"> CSS
+          </label>
+          <label class="block">
+            <input type="checkbox" value="js"> JS
+          </label>
+        </div>
+        <span class="text">Any comments or suggestions?</span>
+        <textarea class="input"></textarea>
+        <button id="submit" type="submit">SUBMIT</button>
+      </form>
+    </div>
+  </body>
+
+  </html>
